@@ -20,7 +20,7 @@ const DigitalSignageContentBlock = () =>{
                 </div>
                 
             </div>
-            <div contentBlockRight>
+            <div>
                 <img src={rightImg} alt=""/>
             </div>
         </div>
