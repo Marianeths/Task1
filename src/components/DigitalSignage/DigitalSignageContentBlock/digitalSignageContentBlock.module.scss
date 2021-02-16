@@ -1,0 +1,108 @@
+.contentBlockWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    @media(max-width:700px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contentBlockLeft{
+    width: 50%;
+    margin-right: 61px;
+    max-width: 450px;
+
+    @media(max-width:1050px){
+        margin-right: 0;
+        
+    }
+
+    @media(max-width:700px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.titleLeftBlock{
+    margin-top: 66px;
+    font-size: 60px;
+    line-height: 77px;
+    font-weight: 800;
+    font-family: var(--nunitoSans);
+    color: #1A233B;
+
+    @media(max-width:1050px){
+        margin-top: 40px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    @media(max-width:890px){
+        margin-top: 20px;
+        font-size: 32px;
+    }
+
+    @media(max-width:700px){
+        br{
+            display: none;
+        }
+    }
+
+}
+
+.textLeftBlock{
+    margin-top: 13px;
+    font-size: 18px;
+    line-height: 30px; 
+    font-weight: 400;
+    font-family: var(--nunitoSans);
+    color: #35415E;
+
+
+    @media(max-width:890px){
+        font-size: 16px;
+    }
+}
+
+.tryForFreeBlock{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    img{
+        width: 24px;
+        height: 24px;
+        
+    }
+
+    span{
+        @media(max-width:890px){
+            display: none;
+        }
+    }
+}
+
+.checkmarkText{
+    margin-left: 8px;
+    font-size: var(--fz);
+    font-weight: 400;
+    line-height: 30px;
+    font-family: var(--nunitoSans);
+    color: #35415E;
+}
+
+.contentBlockRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 576px;
+    img{
+        width: 100%;
+    }
+
+}
+

@@ -1,0 +1,137 @@
+.headerWrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+
+    position: relative;
+
+    @media(max-width:900px){
+        justify-content: space-between;    
+    }
+
+}
+
+.headerImg{
+    margin-right: 55px;
+
+    @media(max-width:350px){
+        width: 200px;
+    }
+}
+
+.headerNav{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+
+    a{
+        font-size: 14px;
+        line-height: 19.1px;
+        font-weight: 600;
+        font-family: var(--nunitoSans);
+        color: #1A233B;
+
+        margin-right: 25px;
+
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    
+    margin-right: 25px;
+
+    @media(max-width:900px){
+        display: none;
+    }
+    
+}
+
+.headerButtons{
+    @media(max-width:1130px){
+            display: none;
+        
+    }
+}
+
+.headerMenu{
+    position: relative;
+
+    display: none;
+
+    @media(max-width:900px){
+        display: block;
+    }
+
+    span{
+        display: block;
+        width: 40px;
+        height: 5px;
+        background-color: #0460BA;
+
+        margin-bottom: 7px;
+
+        transition-duration: 0.5s;
+    }
+}
+
+.menuActive{
+    span{
+        &:nth-child(1){
+            transform: rotate(45deg);
+            position: relative;
+            top: 5px;
+        }
+        &:nth-child(2){
+            display: none;
+        }
+        &:nth-child(3){
+            transform: rotate(-45deg);
+            position: relative;
+            top: -6px;
+        }
+    }
+}
+
+
+.headerMenuNav{
+    position: absolute;
+    right: 50%;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+
+    background-color: #0460BA;
+    padding: 10px 15px;
+
+    visibility: hidden;
+    transition-duration: 0.5s;
+    opacity: 0;
+    
+    a{
+        font-size: 14px;
+        line-height: 19.1px;
+        font-weight: 600;
+        font-family: var(--nunitoSans);
+        color: #FFFFFF;
+        cursor: pointer;
+
+        margin-bottom: 5px;
+
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+
+}
+
+.activeNavMenu{
+    visibility: visible;
+    opacity: 1;
+    top: 50px;
+
+}

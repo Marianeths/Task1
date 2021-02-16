@@ -1,0 +1,53 @@
+.sysopsContainer{
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-bottom: 93px;
+    
+}
+
+.sysopsWrapper{
+    background-color: #0460BA;
+    box-shadow: 0px 2px 6px rgba(26, 35, 59, 0.120957);
+    border-radius: 11px; 
+    padding: 41px 48px 35px 45px;
+
+    position: relative;
+}
+
+.sysopsText{
+    margin-top: 22px;
+    margin-bottom: 39px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: var(--nunitoSans);
+
+    color: #FFFFFF;
+}
+
+.sysopsRating{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 800;
+    font-family: var(--nunitoSans);
+    color: #FFFFFF;
+
+    display: flex;
+}
+
+.RatingStars{
+    margin-left: 15px;
+}
+
+.sysopsRatingName{
+    margin-right: 15px;
+    white-space: nowrap;
+}
+
+
+.sysopsBgImg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
